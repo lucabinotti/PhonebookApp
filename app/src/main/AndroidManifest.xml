@@ -12,18 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RubricaApp"
         tools:targetApi="31">
-        <activity
-            android:name=".ContactActivity"
-            android:exported="false" />
+
+        <!-- Activity principale in modalità portrait -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Activity alternativa per landscape -->
+        <activity
+            android:name=".MainLandActivity"
+            android:screenOrientation="landscape"
+            android:exported="true"
+            android:configChanges="orientation|screenSize">
+        </activity>
+
+        <!-- Altra Activity -->
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+
+    </application>
 </manifest>

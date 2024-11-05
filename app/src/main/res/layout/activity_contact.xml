@@ -22,7 +22,7 @@
 -->
     <!-- Name of the contact -->
     <TextView
-        android:id="@+id/contactName"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name"
@@ -33,7 +33,7 @@
 
     <!-- Surname of the contact -->
     <TextView
-        android:id="@+id/contactSurname"
+        android:id="@+id/surname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Surname"
@@ -44,7 +44,7 @@
 
     <!-- Age of the contact -->
     <TextView
-        android:id="@+id/contactAge"
+        android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Age"

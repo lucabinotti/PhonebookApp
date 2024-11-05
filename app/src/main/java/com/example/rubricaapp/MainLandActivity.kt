@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class MainLandActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -46,11 +46,12 @@ class MainActivity : AppCompatActivity() {
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
 
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            // Avvia MainLandActivity in modalità landscape
-            val intent = Intent(this, MainLandActivity::class.java)
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            // Torna a MainActivity in modalità portrait
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish() // Termina MainActivity per evitare sovrapposizioni
+            finish() // Termina MainLandActivity per evitare sovrapposizioni
         }
     }
+
 }
