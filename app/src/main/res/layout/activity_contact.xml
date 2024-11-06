@@ -8,24 +8,22 @@
     android:gravity="center"
     android:background="#FFFFFF">
 
-    <!-- Photo of the contact
+    <!-- Photo of the contact -->
     <ImageView
-        android:id="@+id/contactPhoto"
+        android:id="@+id/photo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_contact_placeholder"
-        android:contentDescription="Contact Photo"
+        android:contentDescription="@string/contact_photo"
         android:scaleType="centerCrop"
-        android:background="@android:color/darker_gray"
+        android:background="@android:color/transparent"
         android:layout_marginBottom="16dp"/>
--->
+
     <!-- Name of the contact -->
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
@@ -36,7 +34,6 @@
         android:id="@+id/surname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Surname"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
@@ -47,7 +44,6 @@
         android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Age"
         android:textSize="18sp"
         android:textColor="#666666"
         android:layout_marginBottom="8dp"/>

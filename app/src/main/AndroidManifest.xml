@@ -13,24 +13,14 @@
         android:theme="@style/Theme.RubricaApp"
         tools:targetApi="31">
 
-        <!-- Activity principale in modalità portrait -->
+        <!-- Activity principale -->
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:exported="true"
-            android:configChanges="orientation|screenSize">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Activity alternativa per landscape -->
-        <activity
-            android:name=".MainLandActivity"
-            android:screenOrientation="landscape"
-            android:exported="true"
-            android:configChanges="orientation|screenSize">
         </activity>
 
         <!-- Altra Activity -->

@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">RubricaApp</string>
-    <string name="my_contacts_app">Contacts App</string>
+    <string name="app_name">PhonebookApp</string>
+    <string name="my_contacts_app">Phonebook</string>
+    <string name="contact_photo">Contact Photo</string>
 </resources>
